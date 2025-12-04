@@ -21,7 +21,3 @@ public class FormDataModel {
     private String message;
 }
 
-//@Data use panina getter/setter work ah handle panum apram toString,Equalsto,hashcode ellamey automatic ah convert panum
-//@AllArgsConstructor---->all fields ku constructor create panidum
-//@NoArgsConstructor----->all arguments-um illam oru empty constructor automatically create panidum -->json convert pana oru empty constructor venum
-//@Document--->mongodb la store agurathu ellamey oru collection than store agum
