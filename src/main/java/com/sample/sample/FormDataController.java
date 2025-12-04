@@ -22,14 +22,11 @@ public class FormDataController {
     private FormRepository form;
     
     @PostMapping
-    public FormDataModel SubmitFormDataModel(@RequestBody FormDataModel Data){//requestbody la than json format data va varum atha entha class ku kudukanum namba than decide pananum athunal than anga formdatamodel nu kudutu irukom athuku peruthan mapped object nu soluvom---->antha map an object ah data nu oru varialbe name store panunganu solurom antha name vachithan namba db la save panamudiyum.
-        return form.save(Data);
+    public FormDataModel SubmitFormDataModel(@RequestBody FormDataModel Data){
 
     }
     @GetMapping
-    public List<FormDataModel> getAllForms(){//multiple values store pani irukum db la athunala than namba
-        //list use panurom ethu multiple values return pani orey method name la namku send  panum getallforms()--->ethu method name
-        //method name illama method declare pana mudiyathu apram complie time error varum 
+    public List<FormDataModel> getAllForms(){
         return form.findAll();
     }
     @GetMapping("/{id}")
